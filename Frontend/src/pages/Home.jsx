@@ -2,6 +2,7 @@ import Navbar from "../components/General/Navbar";
 import Banner from "../components/Home/Banner";
 import Header from "../components/Home/Header";
 import LatestNews from "../components/LatestNews/LatestNews";
+import Projects from "../components/Projects/Projects";
 import Publications from "../components/Publications/Publications";
 
 const Home = () => {
@@ -25,6 +26,9 @@ const Home = () => {
                 </section>
                 <section>
                     <Publications />
+                </section>
+                <section>
+                    <Projects />
                 </section>
             </div>
         </div>

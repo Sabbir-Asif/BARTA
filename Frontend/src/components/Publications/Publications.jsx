@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import PublicationCard from "./PublicationCard";
-
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 const Publications = () => {
     const [publications, setPublications] = useState([]);
+    const [displayCount, setDisplayCount] = useState(4);
+    const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {
         fetch("/data/publications.json")
@@ -24,6 +26,16 @@ const Publications = () => {
             });
     }, []);
 
+    const handleToggle = () => {
+        if (!showAll) {
+            setShowAll(true);
+            setDisplayCount(publications.length);
+        } else {
+            setShowAll(false);
+            setDisplayCount(4);
+        }
+    };
+
     return (
         <section className="py-12">
             <div className="">
@@ -32,10 +44,29 @@ const Publications = () => {
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {publications.map((publication) => (
+                    {publications.slice(0, displayCount).map((publication) => (
                         <PublicationCard key={publication.id} publication={publication} />
                     ))}
                 </div>
+
+                {publications.length > 4 && (
+                    <div className="flex justify-center mt-4">
+                        <button
+                            onClick={handleToggle}
+                            className="bg-green-primary text-sm text-white px-6 py-1 rounded-md font-medium flex items-center gap-2 transition hover:bg-green-dark"
+                        >
+                            {showAll ? (
+                                <>
+                                    Show Less <IoIosArrowUp size={18} />
+                                </>
+                            ) : (
+                                <>
+                                    Show More <IoIosArrowDown size={18} />
+                                </>
+                            )}
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     );
