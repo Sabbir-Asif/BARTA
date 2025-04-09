@@ -45,7 +45,7 @@ const LatestNews = () => {
   return (
     <section className="">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-medium mb-2">Latest News</h2>
+        <h2 className="text-2xl font-medium text-gray-700 mb-2">Latest News</h2>
         
         <ul className="divide-y divide-gray-200">
           {news.map((item) => (
@@ -59,11 +59,11 @@ const LatestNews = () => {
                   <span className="ml-2">{formatDate(item.date)}</span>
                 </div>
                 
-                <h3 className="text-sm font-semibold text-blue-primary mb-1">
+                <h3 className="text-md font-semibold text-blue-primary mb-1">
                   {item.title}
                 </h3>
                 
-                <p className="text-xs text-gray-600 mb-1">
+                <p className="text-sm text-gray-600 mb-1">
                   {item.summary}
                 </p>
               </div>
