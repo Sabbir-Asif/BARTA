@@ -56,7 +56,7 @@ const Projects = () => {
                         <tbody>
                             {projects.slice(0, displayCount).map((project, index) => (
                                 <tr key={index} className={index % 2 === 0 ? "bg-gray-50" : "bg-white hover:bg-gray-100"}>
-                                    <td className="font-medium font-nunito">{project.title}</td>
+                                    <td className="font-medium font-nunito max-w-[230px] break-words whitespace-normal">{project.title}</td>
                                     <td className="font-nunito">{project.owner}</td>
                                     <td>
                                         <div className={`badge ${
@@ -76,8 +76,7 @@ const Projects = () => {
                                     </td>
                                     <td>
                                         <div className="flex gap-2">
-                                            {project.github && (
-                                                <a
+                                        <a
                                                     href={project.github}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
@@ -85,17 +84,6 @@ const Projects = () => {
                                                 >
                                                     Repo
                                                 </a>
-                                            )}
-                                            {project.host && (
-                                                <a
-                                                    href={project.host}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="btn btn-xs btn-outline border-green-primary text-green-primary hover:bg-green-primary hover:text-cream-primary font-nunito"
-                                                >
-                                                    Demo
-                                                </a>
-                                            )}
                                         </div>
                                     </td>
                                     <td className="text-center">
