@@ -117,7 +117,7 @@ const Projects = () => {
                     <div className="flex justify-center mt-8">
                         <button
                             onClick={handleToggle}
-                            className="btn bg-green-primary text-cream-primary hover:bg-green-dark border-none font-nunito rounded-full px-6 shadow-md transition-all duration-300 flex items-center gap-2"
+                            className="bg-green-primary text-sm text-white px-6 py-1 rounded-md font-medium flex items-center gap-2 transition hover:bg-green-dark"
                         >
                             {showAll ? (
                                 <>
