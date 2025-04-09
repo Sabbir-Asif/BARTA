@@ -45,25 +45,25 @@ const LatestNews = () => {
   return (
     <section className="">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-medium text-gray-700 mb-2">Latest News</h2>
+        <h2 className="text-2xl font-medium text-gray-800 mb-2">Latest News</h2>
         
         <ul className="divide-y divide-gray-200">
           {news.map((item) => (
             <li key={item.id} className="py-2 lg:py-4">
               <div className="flex flex-col">
-                <div className="flex items-center text-xs text-gray-500 mb-1">
-                  <span className="text-green-primary font-medium mr-2">
+                <div className="flex items-center text-sm mb-1">
+                  <span className="text-green-secondary font-bold mr-2">
                     {item.category}
                   </span>
                   <span>•</span>
-                  <span className="ml-2">{formatDate(item.date)}</span>
+                  <span className="ml-2 text-gray-800">{formatDate(item.date)}</span>
                 </div>
                 
-                <h3 className="text-md font-semibold text-blue-primary mb-1">
+                <h3 className="text-md font-semibold text-green-primary mb-1">
                   {item.title}
                 </h3>
                 
-                <p className="text-sm text-gray-600 mb-1">
+                <p className="text-sm text-gray-700 mb-1">
                   {item.summary}
                 </p>
               </div>

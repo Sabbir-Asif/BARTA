@@ -11,18 +11,18 @@ const Home = () => {
     return (
         <div className="bg-cream-primary">
             <Navbar />
-            <div className="pt-16"> {/* Add padding top to account for fixed navbar */}
+            <div className="pt-2 lg:pt-12">
                 <section id="home">
                     <Header />
                 </section>
-                <div className="container mx-auto max-w-7xl">
-                    <section className="flex flex-col md:flex-row gap-4 md:gap-6 px-4 md:px-12">
-                        <div className="mt-12 md:w-3/4">
+                <div className="container mx-auto max-w-6xl lg:max-w-7xl">
+                    <section className="flex flex-col md:flex-row gap-4 md:gap-6 px-4 lg:p-12 border-2 border-[#679b9b] rounded-md">
+                        <div className=" md:w-3/5">
                             <Banner />
                         </div>
                         <div
-                            className="flex-grow md:w-1/4 overflow-auto"
-                            style={{ height: "600px" }}
+                            className="flex-grow md:w-2/5 overflow-auto"
+                            style={{ height: "500px" }}
                         >
                             <LatestNews />
                         </div>

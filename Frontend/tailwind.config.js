@@ -8,9 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        "green-primary": "#607274",
-        "cream-primary" : "#fdfef7",
-        "green-dark": '#435051'
+        "green-primary": "#015958",
+        "cream-primary" : "#fefcfa",
+        "green-dark": '#023535',
+        "green-secondary": "#0CABA8"
       },
       fontFamily: {
         koulen: 'Koulen',
