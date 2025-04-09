@@ -16,12 +16,12 @@ const TeamCard = ({ member }) => {
     } = member;
 
     return (
-        <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
+        <div className="bg-white rounded-lg border-2 p-2 border-green-primary overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
             <div className="relative h-64 overflow-hidden">
                 <img 
                     src={image || '/assets/placeholder-profile.jpg'} 
                     alt={name}
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-center rounded-md"
                     onError={(e) => {
                         e.target.src = '/assets/placeholder-profile.jpg';
                     }}
@@ -30,8 +30,8 @@ const TeamCard = ({ member }) => {
 
             <div className="p-5 flex-grow flex flex-col">
                 <div className="mb-2">
-                    <h3 className="text-xl font-semibold font-nunito text-gray-800">{name}</h3>
-                    <p className="text-green-primary font-medium">{role}</p>
+                    <h3 className="text-xl font-bold font-nunito text-gray-800">{name}</h3>
+                    <p className="text-green-primary font-semibold">{role}</p>
                 </div>
                 
                 <div className="text-gray-600 text-sm mb-4 flex-grow">

@@ -41,15 +41,14 @@ const Teams = () => {
                     Meet Our Team
                 </h2>
 
-                {/* Role Filter Buttons */}
                 <div className="flex flex-wrap justify-center gap-2 mb-8">
                     {teams.length > 0 && filterRoles().map((role, index) => (
                         <button
                             key={index}
                             onClick={() => handleFilterChange(role)}
-                            className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeFilter === role
+                            className={`px-4 py-2 rounded-full text-md font-medium transition-all duration-300 ${activeFilter === role
                                     ? 'bg-green-primary text-white shadow-md'
-                                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                                    : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
                                 }`}
                         >
                             {role}

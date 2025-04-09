@@ -4,6 +4,7 @@ import Banner from "../components/Home/Banner";
 import Header from "../components/Home/Header";
 import LatestNews from "../components/LatestNews/LatestNews";
 import Projects from "../components/Projects/Projects";
+import OurResearch from "../components/Publications/OurResearch";
 import Publications from "../components/Publications/Publications";
 import Teams from "../components/Teams/Teams";
 
@@ -27,6 +28,13 @@ const Home = () => {
                             <LatestNews />
                         </div>
                     </section>
+                </div>
+                <div>
+                    <section className="mt-10 lg:mt-16">
+                        <OurResearch />
+                    </section>
+                </div>
+                <div className="container mx-auto max-w-6xl lg:max-w-7xl">
                     <section id="publications">
                         <Publications />
                     </section>
