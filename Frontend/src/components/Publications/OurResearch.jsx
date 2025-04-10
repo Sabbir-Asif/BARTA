@@ -5,7 +5,6 @@ const OurResearch = () => {
     <div className="bg-green-primary py-12 h-[400px] lg:h-[550px]">
       <div className="container mx-auto max-w-6xl lg:max-w-7xl">
         <h2 className="text-3xl text-center text-cream-primary font-ruhi font-bold mb-8 lg:mb-16">Our Research Goals</h2>
-        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             "Community Smell in Software Projects",
