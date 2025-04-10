@@ -1,6 +1,6 @@
 const PublicationCard = ({ publication }) => {
     return (
-        <div className=" border border-gray-200 rounded-lg shadow-xs p-6 mb-4 transition-all hover:shadow-md">
+        <div className=" border border-green-primary rounded-lg shadow-xs p-6 mb-4 transition-all hover:shadow-md">
             <h3 className="text-lg font-semibold text-gray-800 mb-2 font-nunito">
                 {publication.title}
             </h3>

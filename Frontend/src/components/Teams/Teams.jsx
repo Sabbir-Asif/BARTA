@@ -35,9 +35,9 @@ const Teams = () => {
     };
 
     return (
-        <section className="py-12 bg-cream-primary">
+        <section className="bg-cream-primary">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold font-nunito text-center text-gray-700 mb-6 md:mb-10">
+                <h2 className="text-3xl font-bold font-nunito text-center text-gray-700 mb-8 md:mb-16">
                     Meet Our Team
                 </h2>
 

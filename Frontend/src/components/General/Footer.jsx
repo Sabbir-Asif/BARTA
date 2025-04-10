@@ -5,13 +5,12 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-green-primary text-cream-primary">
-      {/* Main Footer Content */}
-      <div className="footer p-10 container mx-auto grid-cols-1 md:grid-cols-3 gap-8">
-        {/* About Section */}
+    <footer className="bg-green-primary text-cream-primary font-nunito">
+
+      <div className="container mx-auto px-6 py-10 flex flex-col md:flex-row justify-around gap-8">
         <div>
-          <span className="footer-title opacity-80 text-lg">About Us</span>
-          <p className="mt-4 max-w-md opacity-80">
+          <h3 className="text-lg font-semibold mb-4 text-cream-primary opacity-80">About Us</h3>
+          <p className="max-w-md opacity-80 mt-4">
             Our research lab focuses on developing innovative solutions 
             at the intersection of artificial intelligence, data science, and 
             computational systems to address real-world challenges.
@@ -20,54 +19,50 @@ const Footer = () => {
         
         {/* Quick Links */}
         <div>
-          <span className="footer-title opacity-80 text-lg">Quick Links</span>
-          <div className="grid grid-cols-2 gap-2 mt-4">
-            <a href="#research" className="link link-hover opacity-80 hover:opacity-100">Research</a>
-            <a href="#publications" className="link link-hover opacity-80 hover:opacity-100">Publications</a>
-            <a href="#team" className="link link-hover opacity-80 hover:opacity-100">Our Team</a>
-            <a href="#projects" className="link link-hover opacity-80 hover:opacity-100">Projects</a>
-            <a href="#events" className="link link-hover opacity-80 hover:opacity-100">Events</a>
-            <a href="#contact" className="link link-hover opacity-80 hover:opacity-100">Contact</a>
+          <h3 className="text-lg font-semibold mb-4 text-cream-primary opacity-80">Quick Links</h3>
+          <div className="grid grid-cols-2 mt-4">
+            <a href="#goal" className="opacity-80 hover:opacity-100 transition-opacity duration-200">Research</a>
+            <a href="#publications" className="opacity-80 hover:opacity-100 transition-opacity duration-200">Publications</a>
+            <a href="#teams" className="opacity-80 hover:opacity-100 transition-opacity duration-200">Our Team</a>
+            <a href="#projects" className="opacity-80 hover:opacity-100 transition-opacity duration-200">Projects</a>
+            <a href="#events" className="opacity-80 hover:opacity-100 transition-opacity duration-200">Events</a>
           </div>
         </div>
         
         {/* Contact Info */}
         <div>
-          <span className="footer-title opacity-80 text-lg">Contact</span>
-          <div className="mt-4 space-y-2 opacity-80">
+          <h3 className="text-lg font-semibold mb-4 text-cream-primary opacity-80">Contact</h3>
+          <div className="mt-4 opacity-80">
             <p>Institute of Information Technology</p>
             <p>University of Dhaka</p>
             <p>Dhaka, Bangladesh</p>
-            <p className="flex items-center gap-2 mt-1">
+            <p className="flex items-center gap-2">
               <FaEnvelope size={16} />
-              <a href="mailto:contact@researchlab.edu" className="link link-hover">contact@researchlab.edu</a>
+              <a href="mailto:contact@researchlab.edu" className="hover:opacity-100 transition-opacity duration-200">barta.research@gmail.com</a>
             </p>
           </div>
         </div>
       </div>
-      
-      {/* Divider */}
+
       <div className="border-t border-cream-primary/20"></div>
       
-      {/* Bottom Bar */}
       <div className="p-6 bg-green-dark">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm opacity-70 text-center md:text-left mb-4 md:mb-0">
-            © {currentYear} Research Lab. All rights reserved.
+            © {currentYear} BARTA Research Lab. All rights reserved.
           </div>
           
-          {/* Social Links */}
           <div className="flex gap-4">
-            <a href="#" className="btn btn-circle btn-sm btn-ghost" aria-label="Facebook">
+            <a href="#" className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-green-primary/50 transition-colors duration-200" aria-label="Facebook">
               <FaFacebook size={18} className="text-cream-primary opacity-80 hover:opacity-100" />
             </a>
-            <a href="#" className="btn btn-circle btn-sm btn-ghost" aria-label="Twitter">
+            <a href="#" className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-green-primary/50 transition-colors duration-200" aria-label="Twitter">
               <FaTwitter size={18} className="text-cream-primary opacity-80 hover:opacity-100" />
             </a>
-            <a href="#" className="btn btn-circle btn-sm btn-ghost" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/bartaresearchlab/" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-green-primary/50 transition-colors duration-200" aria-label="LinkedIn">
               <FaLinkedin size={18} className="text-cream-primary opacity-80 hover:opacity-100" />
             </a>
-            <a href="#" className="btn btn-circle btn-sm btn-ghost" aria-label="GitHub">
+            <a href="#" className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-green-primary/50 transition-colors duration-200" aria-label="GitHub">
               <FaGithub size={18} className="text-cream-primary opacity-80 hover:opacity-100" />
             </a>
           </div>

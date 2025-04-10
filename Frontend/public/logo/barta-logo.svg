@@ -1,0 +1,9 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background hexagon -->
+  <polygon points="150,50 237,100 237,200 150,250 63,200 63,100" fill="#015958" stroke="#ffffff" stroke-width="3"/>
+  
+  <!-- Text -->
+  <text x="150" y="162" font-family="Arial, sans-serif" font-size="32" font-weight="500" fill="#ffffff" text-anchor="middle">&lt;BARTA&gt;</text>
+  
+  
+</svg>

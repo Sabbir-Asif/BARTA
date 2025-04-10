@@ -1,90 +1,86 @@
-import { IoCloseOutline } from "react-icons/io5";
+import { IoEyeOutline } from "react-icons/io5";
 import { FiGithub } from "react-icons/fi";
-import { TbWorldWww } from "react-icons/tb";
 
-const ProjectModal = ({ project, isOpen, onClose }) => {
-    if (!isOpen) return null;
+const ProjectCard = ({ project, openModal }) => {
+  return (
+    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border-2 border-green-primary gap-4 p-4 lg:p-6 flex flex-row">
 
-    return (
-        <div className="modal modal-open">
-            <div className="modal-box bg-cream-primary border-t-4 border-green-primary max-w-2xl">
-                <button 
-                    onClick={onClose}
-                    className="btn btn-sm btn-circle absolute right-4 top-4 bg-transparent border-none hover:bg-gray-100 text-gray-500"
-                >
-                    <IoCloseOutline size={24} />
-                </button>
-                
-                <h3 className="font-bold text-xl text-green-dark font-nunito mb-1">
-                    {project.title}
-                </h3>
-                
-                <p className="text-sm text-gray-600 mb-4 font-nunito">
-                    Led by <span className="font-semibold">{project.owner}</span>
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-4">
-                    <div className="badge bg-green-primary/10 text-green-dark border-green-primary font-nunito">
-                        {project.status || "N/A"}
-                    </div>
-                    {project.type && (
-                        <div className="badge bg-gray-100 text-green-dark border-none font-nunito">
-                            {project.type}
-                        </div>
-                    )}
-                </div>
-                
-                <div className="divider my-2"></div>
-                
-                <div className="py-4">
-                    {project.description ? (
-                        <p className="text-gray-700 font-nunito leading-relaxed">
-                            {project.description}
-                        </p>
-                    ) : (
-                        <p className="text-gray-500 italic font-nunito">
-                            No description available for this project yet.
-                        </p>
-                    )}
-                </div>
-                
-                <div className="flex gap-3 mt-6">
-                    {project.github && (
-                        <a
-                            href={project.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn bg-green-primary text-cream-primary hover:bg-green-dark border-none font-nunito normal-case flex items-center gap-2"
-                        >
-                            <FiGithub size={18} />
-                            Repository
-                        </a>
-                    )}
-                    {project.host && (
-                        <a
-                            href={project.host}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-outline border-green-primary text-green-primary hover:bg-green-primary hover:text-cream-primary font-nunito normal-case flex items-center gap-2"
-                        >
-                            <TbWorldWww size={18} />
-                            View Demo
-                        </a>
-                    )}
-                </div>
-                
-                <div className="modal-action">
-                    <button
-                        onClick={onClose}
-                        className="btn bg-gray-200 hover:bg-gray-300 text-gray-700 border-none font-nunito"
-                    >
-                        Close
-                    </button>
-                </div>
-            </div>
-            <div className="modal-backdrop bg-black/50" onClick={onClose}></div>
+      <div className="w-48 rounded-md h-full overflow-hidden flex-shrink-0">
+        {project.image ? (
+          <img 
+            src={project.image} 
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full bg-gray-100 flex items-center justify-center">
+            <p className="text-gray-400 font-nunito">No image</p>
+          </div>
+        )}
+      </div>
+      
+      <div className=" flex-grow flex flex-col overflow-hidden">
+        <div className="mb-2">
+          <div className="flex flex-wrap gap-1 mb-1">
+            {project.status && (
+              <div className={`badge ${
+                project.status === "ongoing" 
+                  ? "bg-green-primary/10 text-green-dark border-green-primary" 
+                  : "badge-outline"
+              } font-nunito text-xs`}>
+                {project.status}
+              </div>
+            )}
+            {project.type && (
+              <span className="badge bg-gray-100 text-green-dark border-none font-nunito text-xs">
+                {project.type}
+              </span>
+            )}
+          </div>
+          <h3 className="font-bold text-lg text-green-dark font-nunito line-clamp-1">{project.title}</h3>
         </div>
-    );
+        
+        <p className="text-gray-600 font-nunito text-xs mb-2">
+          Led by <span className="font-semibold">{project.owner}</span>
+        </p>
+        
+        <div className="mb-2 flex-grow overflow-hidden">
+          {project.description ? (
+            <p className="text-gray-700 font-nunito text-xs line-clamp-2">
+              {project.description}
+            </p>
+          ) : (
+            <p className="text-gray-500 italic font-nunito text-xs">
+              No description available for this project yet.
+            </p>
+          )}
+        </div>
+        
+        <div className="flex justify-between items-center pt-2 border-t border-gray-100 mt-auto">
+          <div className="flex gap-2">
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-xs bg-green-primary text-cream-primary hover:bg-green-dark border-none font-nunito flex items-center gap-1 text-xs h-6 min-h-0"
+              >
+                <FiGithub size={12} />
+                Repo
+              </a>
+            )}
+          </div>
+          
+          <button
+            onClick={() => openModal(project)}
+            className="btn btn-xs bg-green-primary text-cream-primary hover:bg-green-dark border-none rounded-full px-2 flex items-center gap-1 text-xs h-6 min-h-0"
+          >
+            <IoEyeOutline size={14} />
+            <span className="font-nunito">Details</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
-export default ProjectModal;
+export default ProjectCard;

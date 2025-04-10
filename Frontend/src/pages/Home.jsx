@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div className="bg-cream-primary">
             <Navbar />
-            <div className="pt-2 lg:pt-12">
+            <div className="pt-4 lg:pt-16">
                 <section id="home">
                     <Header />
                 </section>
@@ -29,23 +29,23 @@ const Home = () => {
                         </div>
                     </section>
                 </div>
-                <div>
-                    <section className="mt-10 lg:mt-16">
+                <div id="goal">
+                    <section className="mt-16">
                         <OurResearch />
                     </section>
                 </div>
                 <div className="container mx-auto max-w-6xl lg:max-w-7xl">
-                    <section id="publications">
+                    <section id="publications" className="mt-16 lg:mt-24">
                         <Publications />
                     </section>
-                    <section id="projects">
+                    <section id="projects" className="mt-16 lg:mt-24">
                         <Projects />
                     </section>
-                    <section id="teams">
+                    <section id="teams" className="mt-16 lg:mt-24">
                         <Teams />
                     </section>
                 </div>
-                <section>
+                <section className="mt-16 lg:mt-24">
                     <Footer />
                 </section>
             </div>

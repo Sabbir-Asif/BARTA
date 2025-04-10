@@ -37,9 +37,9 @@ const Publications = () => {
     };
 
     return (
-        <section className="py-12">
+        <section className="">
             <div className="">
-                <h2 className="text-3xl font-bold font-nunito text-center text-gray-700 mb-6 md:mb-10">
+                <h2 className="text-3xl font-bold font-nunito text-center text-gray-700 mb-8 md:mb-16">
                     Publications
                 </h2>
 
@@ -53,7 +53,7 @@ const Publications = () => {
                     <div className="flex justify-center mt-4">
                         <button
                             onClick={handleToggle}
-                            className="bg-green-primary text-sm text-white px-6 py-1 rounded-md font-medium flex items-center gap-2 transition hover:bg-green-dark"
+                            className="bg-green-primary text-sm text-white px-6 py-2 rounded-md font-medium flex items-center gap-2 transition hover:bg-green-dark"
                         >
                             {showAll ? (
                                 <>
