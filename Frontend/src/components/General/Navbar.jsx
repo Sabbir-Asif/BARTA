@@ -40,10 +40,10 @@ const Navbar = () => {
                             <li><button onClick={() => scrollToSection('teams')}>Our Team</button></li>
                         </ul>
                     </div>
-                    <a className="text-4xl font-ruhi text-base-200 font-bold">BARTA</a>
+                    <a className="text-4xl font-ruhi text-cream-primary font-bold">BARTA</a>
                 </div>
                 <div className="hidden navbar-center lg:flex md:flex-grow lg:justify-center">
-                    <ul className="menu menu-horizontal space-x-6 text-base-100 font-semibold text-xl font-nunito">
+                    <ul className="menu menu-horizontal space-x-6 text-cream-primary font-semibold text-xl font-nunito">
                         <li><button onClick={() => scrollToSection('home')} className="hover:text-gray-200">Home</button></li>
                         <li><button onClick={() => scrollToSection('publications')} className="hover:text-gray-200">Publications</button></li>
                         <li><button onClick={() => scrollToSection('projects')} className="hover:text-gray-200">Ongoing Projects</button></li>
