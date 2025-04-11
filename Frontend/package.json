@@ -12,6 +12,7 @@
   "dependencies": {
     "@xyflow/react": "^12.4.4",
     "localforage": "^1.10.0",
+    "lucide-react": "^0.487.0",
     "marked": "^15.0.7",
     "match-sorter": "^8.0.0",
     "react": "^19.0.0",

@@ -16,14 +16,14 @@ const Home = () => {
                 <section id="home">
                     <Header />
                 </section>
-                <div className="container mx-auto max-w-6xl lg:max-w-7xl">
-                    <section className="flex flex-col md:flex-row gap-4 md:gap-6 px-4 lg:p-12 border-2 border-[#679b9b] rounded-md">
+                <div className="container pt-6 mx-auto max-w-5xl lg:max-w-6xl">
+                    <section className="flex flex-col md:flex-row gap-4 md:gap-6 p-8 xl:p-12 border-2 border-[#679b9b] rounded-md">
                         <div className=" md:w-3/5">
                             <Banner />
                         </div>
                         <div
                             className="flex-grow md:w-2/5 overflow-auto"
-                            style={{ height: "500px" }}
+                            style={{ height: "400px" }}
                         >
                             <LatestNews />
                         </div>

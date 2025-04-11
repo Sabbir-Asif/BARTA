@@ -45,7 +45,7 @@ const LatestNews = () => {
   return (
     <section className="">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-medium text-gray-800 mb-2">Latest News</h2>
+        <h2 className="text-2xl font-medium text-gray-800">Latest News</h2>
         
         <ul className="divide-y divide-gray-200">
           {news.map((item) => (
