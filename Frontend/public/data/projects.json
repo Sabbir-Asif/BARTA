@@ -10,14 +10,14 @@
         "image": "/assets/projects/BKMS.png"
     },
     {
-        "title": "Stemming",
-        "description": "",
+        "title": "AI-Driven Insights for Alzheimer's and Dementia",
+        "description": "The research aims to explore the potential of utilizing community-driven data from the Alzheimer’s and Dementia subreddits to develop an AI-powered tool that could assist in diagnosing and managing Alzheimer’s disease. The project involves scraping extensive data from these subreddits, which includes user-generated content about symptoms, treatment experiences, and caregiving advice. This data will be used to pre-train a language model, enabling the development of a tool that can provide preliminary insights and suggestions to patients. The goal is to compare the AI-generated responses with real-life medical advice to assess the tool's effectiveness and explore its potential in supporting patients and caregivers in real-world scenarios.",
         "owner": "Tumpa",
         "status": "ongoing",
         "type": "",
         "github": "",
         "host": "",
-        "image": "/assets/projects/BKMS.png"
+        "image": "/assets/projects/dementia.webp"
     },
     {
         "title": "Temporal Reasoning Ability of LLMs Using VoT Prompting",
@@ -70,7 +70,7 @@
         "image": "/assets/BKMS.png"
     },
     {
-        "title": "Child Mind Institute / Bangla Music Emotion Prediction with Human-in-loop verification",
+        "title": "Bangla musical information retrieval",
         "description": "The study aims to determine whether extracted audio features (e.g., zero_crossing, spectral_centroid, MFCCs) correlate with emotions in Bangla music. Additionally, it evaluates the feasibility of using these features for automated emotion classification, incorporating human-in-the-loop (HITL) verification to improve model accuracy.",
         "owner": "Lia",
         "status": "ongoing",
