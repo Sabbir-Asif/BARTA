@@ -8,7 +8,6 @@ import OurResearch from "../components/Publications/OurResearch";
 import Publications from "../components/Publications/Publications";
 import Teams from "../components/Teams/Teams";
 import { useEffect, useRef, useState } from "react"
-import { ChevronRight, BrainCircuit, Languages, BookText, MessageSquareText, Bot } from "lucide-react"
 
 
 const Home = () => {
@@ -165,7 +164,7 @@ const Home = () => {
         ctx.save()
         ctx.translate(particle.x, particle.y)
         ctx.rotate(particle.rotation)
-        ctx.font = `${particle.size}px 'Hind Siliguri', 'Noto Sans Bengali', Arial, sans-serif`
+        ctx.font = `${particle.size}px 'Noto Sans Bengali', Arial, sans-serif`
         ctx.fillStyle = particle.color
         ctx.globalAlpha = particle.opacity
         ctx.textAlign = "center"
@@ -190,7 +189,7 @@ const Home = () => {
   }, [fontLoaded])
 
     return (
-        <div className="px-2">
+        <div className="px-2 bg-cream-primary">
             <Navbar />
                 <canvas ref={canvasRef} className="absolute inset-0 w-full h-full opacity-70" style={{ zIndex: -1 }}></canvas>
             <div className="pt-4 lg:pt-16 2xl:pt-20">
