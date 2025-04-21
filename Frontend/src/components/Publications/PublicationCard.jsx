@@ -20,7 +20,7 @@ const PublicationCard = ({ publication }) => {
                     href={publication.pdf}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm px-3 py-1 bg-green-primary text-base-100 hover:bg-green-dark rounded-md font-medium flex items-center"
+                    className="text-sm px-3 py-1 bg-green-primary text-white hover:bg-green-dark rounded-md font-medium flex items-center"
                 >
                     View Pdf
                 </a>

@@ -114,9 +114,8 @@ const Home = () => {
         size: Math.random() * 8 + 1,
         speedX: (Math.random() - 0.5) * 0.5,
         speedY: (Math.random() - 0.5) * 0.5,
-        color: `rgba(${10 + Math.random() * 15}, ${50 + Math.random() * 30}, ${50 + Math.random() * 30}, ${
-          0.2
-        })`,
+        color: `rgba(${10 + Math.random() * 15}, ${50 + Math.random() * 30}, ${50 + Math.random() * 30}, ${0.2
+          })`,
       })
     }
 
@@ -188,49 +187,49 @@ const Home = () => {
     return () => window.removeEventListener("resize", handleResize)
   }, [fontLoaded])
 
-    return (
-        <div className="px-2 bg-cream-primary">
-            <Navbar />
-                <canvas ref={canvasRef} className="absolute inset-0 w-full h-full opacity-70" style={{ zIndex: -1 }}></canvas>
-            <div className="pt-4 lg:pt-16 2xl:pt-20">
-                <section id="home">
-                    <Header />
-                </section>
-                <div className="container pt-6 2xl:pt-12 mx-auto max-w-6xl 2xl:max-w-screen-xl">
-                    <section className="flex flex-col md:flex-row gap-4 md:gap-6 p-8 lg:p-12 bg-cream-primary border-2 border-[#679b9b] rounded-md">
-                        <div className=" md:w-3/5">
-                            <Banner />
-                        </div>
-                        <div
-                            className="flex-grow md:w-2/5 overflow-auto"
-                            style={{ height: "500px" }}
-                        >
-                            <LatestNews />
-                        </div>
-                    </section>
-                </div>
-                <div id="goal">
-                    <section className="mt-16 2xl:mt-24">
-                        <OurResearch />
-                    </section>
-                </div>
-                <div className="container mx-auto max-w-6xl lg:max-w-7xl">
-                    <section id="publications" className="mt-16 lg:mt-24">
-                        <Publications />
-                    </section>
-                    <section id="projects" className="mt-16 lg:mt-24">
-                        <Projects />
-                    </section>
-                    <section id="teams" className="mt-16 lg:mt-24">
-                        <Teams />
-                    </section>
-                </div>
-                <section className="mt-16 lg:mt-24">
-                    <Footer />
-                </section>
+  return (
+    <div className="px-2 md:px-0 bg-cream-primary">
+      <Navbar />
+      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full bg-cream-primary opacity-70" style={{ zIndex: 0 }}></canvas>
+      <div className="pt-4 lg:pt-16 2xl:pt-20">
+        <section id="home" className="relative z-20">
+          <Header />
+        </section>
+        <div className="container pt-6 bg-cream-primary  2xl:pt-12 mx-auto max-w-6xl 2xl:max-w-screen-xl">
+          <section className="relative flex flex-col md:flex-row gap-4 md:gap-6 p-8 lg:p-12 bg-cream-primary border-2 border-[#679b9b] rounded-md z-20">
+            <div className=" md:w-3/5">
+              <Banner />
             </div>
+            <div
+              className="flex-grow md:w-2/5 overflow-auto"
+              style={{ height: "500px" }}
+            >
+              <LatestNews />
+            </div>
+          </section>
         </div>
-    );
+        <div id="goal">
+          <section className="mt-16 2xl:mt-24">
+            <OurResearch />
+          </section>
+        </div>
+        <div className="container mx-auto max-w-6xl lg:max-w-7xl">
+          <section id="publications" className="mt-16 lg:mt-24">
+            <Publications />
+          </section>
+          <section id="projects" className="mt-16 lg:mt-24">
+            <Projects />
+          </section>
+          <section id="teams" className="mt-16 lg:mt-24">
+            <Teams />
+          </section>
+        </div>
+        <section className="mt-16 lg:mt-24">
+          <Footer />
+        </section>
+      </div>
+    </div>
+  );
 };
 
 export default Home;
