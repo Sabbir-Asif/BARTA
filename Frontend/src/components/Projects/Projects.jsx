@@ -38,7 +38,7 @@ const Projects = () => {
         <section className=" bg-cream-primary">
             <div className="max-w-7xl mx-auto">
                 <h2 className="text-3xl font-bold font-nunito text-center text-gray-700 mb-10 lg:mb-16">
-                    Our Projects
+                    Ongoing Projects
                 </h2>
 
                 {projects.length > 0 ? (

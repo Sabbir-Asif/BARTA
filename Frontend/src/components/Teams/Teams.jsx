@@ -4,7 +4,7 @@ import TeamCard from './TeamCard';
 const Teams = () => {
     const [teams, setTeams] = useState([]);
     const [filteredTeams, setFilteredTeams] = useState([]);
-    const [activeFilter, setActiveFilter] = useState('Co-Director'); // Changed from 'All' to 'Co-Director'
+    const [activeFilter, setActiveFilter] = useState('All');
 
     useEffect(() => {
         fetch("/data/teams.json")
@@ -15,7 +15,7 @@ const Teams = () => {
             .then((data) => {
                 setTeams(data);
                 // Filter to show only Co-Directors by default
-                setFilteredTeams(data.filter(member => member.role === 'Co-Director'));
+                setFilteredTeams(data);
             })
             .catch((error) => console.error("Error fetching teams:", error));
     }, []);
