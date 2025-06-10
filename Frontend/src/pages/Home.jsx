@@ -209,9 +209,9 @@ const Home = () => {
           </section>
         </div>
         <div id="goal">
-          <section className="mt-16 2xl:mt-24">
+          {/* <section className="mt-16 2xl:mt-24">
             <OurResearch />
-          </section>
+          </section> */}
         </div>
         <div className="container mx-auto max-w-6xl lg:max-w-7xl">
           <section id="publications" className="mt-16 lg:mt-24">
