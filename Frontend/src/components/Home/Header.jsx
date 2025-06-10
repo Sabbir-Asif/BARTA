@@ -41,7 +41,7 @@ const Header = () => {
             </p>
             <div className="h-[2px] w-10 bg-gradient-to-r from-teal-500 to-transparent"></div>
           </div>
-{/* 
+          {/* 
           <div className="flex justify-center py-5">
             <div className="flex items-center space-x-2">
               <div className="w-9 h-9 rounded-md bg-teal-100 flex items-center justify-center text-teal-600">
@@ -68,10 +68,7 @@ const Header = () => {
 
           <div className="relative max-w-3xl mx-auto bg-teal-100 bg-opacity-60 border border-green-secondary backdrop-blur-xs p-5 rounded-lg shadow-sm">
             <p className="text-base text-gray-700 leading-relaxed">
-              We are a group of enthusiastic researchers working to solve the many challenges in{" "}
-              <span className="font-semibold text-teal-700">Bangla Natural Language Processing</span>. Our focus is on
-              developing AI tools that promote social inclusion and accessibility through advanced language
-              technologies.
+              We are a group of enthusiastic researchers working to solve the many challenges related to Artificial Intelligence, with a special focus on Bangla Natural Language Processing. We aim to develop AI tools that promote social inclusion and accessibility through advanced language technologies.
             </p>
           </div>
         </div>
