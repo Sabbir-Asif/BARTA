@@ -30,7 +30,7 @@ const Header = () => {
         <div className="space-y-10">
           <h1 className="mt-9 text-4xl md:text-5xl font-bold tracking-tight bg-white">
             <span className="text-green-primary">
-              Bangla AI Research, Tools and Application
+              Bangla AI Research, Tools and Applications
             </span>
           </h1>
 
