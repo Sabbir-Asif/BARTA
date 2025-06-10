@@ -2,38 +2,35 @@ const LatestNews = () => {
   const news = [
     {
       id: 1,
-      title: "New Research Publication in Computational Linguistics",
-      date: "2025-04-01",
-      category: "Publication",
-      summary: "Our team's research on advanced natural language processing techniques has been accepted at ACL 2025.",
+      title: "Collaboration with International Mother Language Institute (IMLI)",
+      date: "2025-05-01",
+      category: "Collaboration",
+      summary:
+        "BARTA Lab is working in collaboration with International Mother Language Institute (IMLI) on developing an innovative app to show the trending words used in Bangla print and social media.",
     },
     {
       id: 2,
-      title: "Research Collaboration with Stanford NLP Group",
-      date: "2025-03-22",
+      title: "Collaboration with Physically-challenged Development Foundation (PDF)",
+      date: "2025-05-01",
       category: "Collaboration",
-      summary: "New international collaboration with Stanford's NLP research team, focusing on cross-lingual representation learning.",
+      summary:
+        "BARTA Lab is working with Physically-challenged Development Foundation (PDF) to develop training programs and software for physically-challenged university students.",
     },
     {
       id: 3,
-      title: "New Grant Awarded for Multilingual NLP Research",
-      date: "2025-03-15",
-      category: "Funding",
-      summary: "Our research group has secured $1.2M in funding to develop new approaches to multilingual natural language understanding.",
+      title: "BARTA Alumni Mashiat Amin Farin Accepted to UT Dallas",
+      date: "2025-03-01",
+      category: "Alumni",
+      summary:
+        "BARTA alumni Mashiat Amin Farin has been accepted to University of Texas, Dallas. *Get more info on her program/work/dept*",
     },
     {
       id: 4,
-      title: "Dr. Rahman Presents Keynote at NLP Summit",
-      date: "2025-02-28",
+      title: 'Dr. Ahmedul Kabir Presents at IMLI National Seminar',
+      date: "2025-02-01",
       category: "Conference",
-      summary: "Our principal investigator delivered the keynote address on the future of NLP in multilingual contexts.",
-    },
-    {
-      id: 5,
-      title: "New PhD Positions Available",
-      date: "2025-02-15",
-      category: "Opportunity",
-      summary: "Recruiting PhD students with interests in computational linguistics, machine learning, and natural language processing.",
+      summary:
+        'Our Co-Director Dr. Ahmedul Kabir presented an article on "The use of technology for mother tongue-based multilingual learning" at the National Seminar of International Mother Language Institute (IMLI).',
     }
   ];
 
