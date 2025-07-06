@@ -8,7 +8,8 @@ const ProjectCard = ({ project, openModal }) => {
       <div className="w-48 rounded-md h-full overflow-hidden flex-shrink-0">
         {project.image ? (
           <img 
-            src={project.image} 
+            src={project.image}
+            alt={project.title} 
             className="w-full h-full object-cover"
           />
         ) : (
