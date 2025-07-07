@@ -2,6 +2,14 @@ const LatestNews = () => {
   const news = [
     {
       id: 1,
+     id: 1,
+      title: "Dr. Ahmedul Kabir Presents at IMLI Seminar",
+      date: "2025-06-01",
+      category: "Conference",
+      summary: 'Our Co-Director Dr. Ahmedul Kabir presented an article on "Using AI for the preservation of indigenous languages and culture" at the International Mother Language Institute (IMLI).'
+    },
+    {
+      id: 2,
       title: "Collaboration with International Mother Language Institute (IMLI)",
       date: "2025-05-01",
       category: "Collaboration",
@@ -9,7 +17,7 @@ const LatestNews = () => {
         "BARTA Lab is working in collaboration with International Mother Language Institute (IMLI) on developing an innovative app to show the trending words used in Bangla print and social media.",
     },
     {
-      id: 2,
+      id: 3,
       title: "Collaboration with Physically-challenged Development Foundation (PDF)",
       date: "2025-05-01",
       category: "Collaboration",
@@ -17,7 +25,7 @@ const LatestNews = () => {
         "BARTA Lab is working with Physically-challenged Development Foundation (PDF) to develop training programs and software for physically-challenged university students.",
     },
     {
-      id: 3,
+      id: 4,
       title: "BARTA Alumni Mashiat Amin Farin Accepted to UT Dallas",
       date: "2025-03-01",
       category: "Alumni",
@@ -25,7 +33,7 @@ const LatestNews = () => {
         "BARTA alumni Mashiat Amin Farin has been accepted to University of Texas, Dallas. *Get more info on her program/work/dept*",
     },
     {
-      id: 4,
+      id: 5,
       title: 'Dr. Ahmedul Kabir Presents at IMLI National Seminar',
       date: "2025-02-01",
       category: "Conference",
