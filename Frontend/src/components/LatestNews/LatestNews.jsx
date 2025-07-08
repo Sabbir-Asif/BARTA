@@ -2,14 +2,20 @@ const LatestNews = () => {
   const news = [
     {
       id: 1,
-     id: 1,
+      title: "Presenting at July Conference 2025",
+      date: "2025-07-01",
+      category: "Conference",
+      summary: "We will be presenting our work on \"Temporal Analysis of the Gap Between Media Narratives and Public Sentiment During Bangladesh's July Revolution\" at the July Conference, 2025."
+    },
+    {
+      id: 2,
       title: "Dr. Ahmedul Kabir Presents at IMLI Seminar",
-      date: "2025-06-01",
+      date: "2025-06-25",
       category: "Conference",
       summary: 'Our Co-Director Dr. Ahmedul Kabir presented an article on "Using AI for the preservation of indigenous languages and culture" at the International Mother Language Institute (IMLI).'
     },
     {
-      id: 2,
+      id: 3,
       title: "Collaboration with International Mother Language Institute (IMLI)",
       date: "2025-05-01",
       category: "Collaboration",
@@ -17,7 +23,7 @@ const LatestNews = () => {
         "BARTA Lab is working in collaboration with International Mother Language Institute (IMLI) on developing an innovative app to show the trending words used in Bangla print and social media.",
     },
     {
-      id: 3,
+      id: 4,
       title: "Collaboration with Physically-challenged Development Foundation (PDF)",
       date: "2025-05-01",
       category: "Collaboration",
@@ -25,17 +31,17 @@ const LatestNews = () => {
         "BARTA Lab is working with Physically-challenged Development Foundation (PDF) to develop training programs and software for physically-challenged university students.",
     },
     {
-      id: 4,
+      id: 5,
       title: "BARTA Alumni Mashiat Amin Farin Accepted to UT Dallas",
       date: "2025-03-01",
       category: "Alumni",
       summary:
-        "BARTA alumni Mashiat Amin Farin has been accepted to University of Texas, Dallas. *Get more info on her program/work/dept*",
+        "BARTA alumni and founding member Mashiat Amin Farin has been accepted for the PhD program at University of Texas, Dallas.",
     },
     {
-      id: 5,
+      id: 6,
       title: 'Dr. Ahmedul Kabir Presents at IMLI National Seminar',
-      date: "2025-02-01",
+      date: "2025-02-23",
       category: "Conference",
       summary:
         'Our Co-Director Dr. Ahmedul Kabir presented an article on "The use of technology for mother tongue-based multilingual learning" at the National Seminar of International Mother Language Institute (IMLI).',

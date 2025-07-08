@@ -77,6 +77,17 @@
       "image": "/assets/Meet_with_the_teams/sampad.png"
     },
     {
+      "name": "Tanvir Hasan Abir",
+      "workplace": "IIT, University of Dhaka",
+      "position": "Undergrad Student",
+      "email": "bsse1321@iit.du.ac.bd",
+      "googleScholar": "https://scholar.google.com/",
+      "github": "https://github.com/thabir303",
+      "linkedin": "https://www.linkedin.com/in/tanvir-hasan-abir-30219b264",
+      "role": "Undergrad Researcher",
+      "image": "/assets/Meet_with_the_teams/1321.png"
+    },
+    {
       "name": "Umme Kulsum Tumpa",
       "workplace": "IIT, University of Dhaka",
       "position": "Undergrad Student",
@@ -133,7 +144,7 @@
     },
     {
       "name": "Kainat Raisa Hossain",
-      "workplace": "IIT, University of Dhaka",
+      "workplace": "IER, University of Dhaka",
       "position": "Data Science Intern, Markopolo.ai",
       "email": "kainatraisa@gmail.com",
       "googleScholar": "https://scholar.google.com/",

@@ -1,5 +1,15 @@
 [
     {
+        "title": "Bangla Trending Words Analytics Tool",
+        "description": "Language reflects the pulse of society. By tracking the most commonly used Bangla words in social media and news, we gain insight into what dominates public attention. Our tool captures trending words and phrases from digital platforms, revealing shifts in discourse over time. Through this lens, we explore how language mirrors evolving social concerns, public sentiment, and cultural trends—offering a data-driven snapshot of what matters most in contemporary Bangladeshi media.",
+        "owner": "Abhjit",
+        "status": "ongoing",
+        "type": "open source",
+        "github": "https://github.com/SiamRahman29/IMLI-Project",
+        "host": "https://example.com",
+        "image": "/assets/projects/trending_words.png"
+    },
+    {
         "title": "Representation Discrimination",
         "description": "Media portrayal shapes public perception. If a demographic is mostly shown in crime reports, people may associate them with crime. Our study on indigenous communities in Bangladesh reveals a bias: news highlights crime and culture but neglects critical issues like health, economy, and education. This selective coverage keeps their struggles invisible to the broader population.",
         "owner": "Abhjit",
@@ -49,16 +59,7 @@
         "host": "",
         "image": "https://greennetwork.asia/wp-content/uploads/2024/09/SIGN-LANG-ON-YELLOW-SPACE-1024x504.webp"
     },
-    {
-        "title": "Social media data analysis",
-        "description": "",
-        "owner": "Nafis",
-        "status": "ongoing",
-        "type": "",
-        "github": "",
-        "host": "",
-        "image": "https://blog.socialchamp.com/wp-content/uploads/2024/04/Content-Blog-Banner_Q2-2024_1125x600_45_Social-Media-Statistics.png"
-    },
+    
     {
         "title": "Chakma Language Processing",
         "description": "Due to limited digital resources and standardization, CLP faces challenges in script digitization, text processing, and speech recognition. Efforts are being made to digitize the language through NLP datasets, OCR models, and translation tools.",
@@ -78,15 +79,5 @@
         "github": "",
         "host": "",
         "image": "/assets/BKMS.png"
-    },
-    {
-        "title": "Bangla Trending Words Analytics Tool",
-        "description": "Language reflects the pulse of society. By tracking the most commonly used Bangla words in social media and news, we gain insight into what dominates public attention. Our tool captures trending words and phrases from digital platforms, revealing shifts in discourse over time. Through this lens, we explore how language mirrors evolving social concerns, public sentiment, and cultural trends—offering a data-driven snapshot of what matters most in contemporary Bangladeshi media.",
-        "owner": "Abhjit",
-        "status": "ongoing",
-        "type": "open source",
-        "github": "https://github.com/SiamRahman29/IMLI-Project",
-        "host": "https://example.com",
-        "image": "/assets/projects/trending_words.png"
     }
 ]
