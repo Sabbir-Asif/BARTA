@@ -35,7 +35,7 @@
     {
       "name": "Abhijit Paul",
       "workplace": "Samsung R&D Institute, Bangladesh",
-      "position": "Academic Internship",
+      "position": "Software Engineer",
       "email": "bsse1201@iit.du.ac.bd",
       "googleScholar": "https://scholar.google.com/",
       "github": "https://github.com/abj-paul",
@@ -75,17 +75,6 @@
       "linkedin": "https://www.linkedin.com/in/mashiataminfarin/",
       "role": "Alumni",
       "image": "/assets/Meet_with_the_teams/sampad.png"
-    },
-    {
-      "name": "Tanvir Hasan Abir",
-      "workplace": "IIT, University of Dhaka",
-      "position": "Undergrad Student",
-      "email": "bsse1321@iit.du.ac.bd",
-      "googleScholar": "https://scholar.google.com/",
-      "github": "https://github.com/thabir303",
-      "linkedin": "https://www.linkedin.com/in/tanvir-hasan-abir-30219b264",
-      "role": "Undergrad Researcher",
-      "image": "/assets/Meet_with_the_teams/1321.png"
     },
     {
       "name": "Umme Kulsum Tumpa",
@@ -152,6 +141,17 @@
       "linkedin": "https://www.linkedin.com/in/kainat-raisa/",
       "role": "Undergrad Researcher",
       "image": "/assets/Meet_with_the_teams/Kainat.jpg"
+    },
+    {
+      "name": "Tanvir Hasan Abir",
+      "workplace": "IIT, University of Dhaka",
+      "position": "Undergrad Student",
+      "email": "bsse1321@iit.du.ac.bd",
+      "googleScholar": "https://scholar.google.com/",
+      "github": "https://github.com/thabir303",
+      "linkedin": "https://www.linkedin.com/in/tanvir-hasan-abir-30219b264",
+      "role": "Undergrad Researcher",
+      "image": "/assets/Meet_with_the_teams/1321.png"
     }
   ]
   
