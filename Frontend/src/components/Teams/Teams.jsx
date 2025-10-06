@@ -47,11 +47,11 @@ const Teams = () => {
                             key={index}
                             onClick={() => handleFilterChange(role)}
                             className={`px-4 py-2 rounded-full text-md font-medium transition-all duration-300 ${activeFilter === role
-                                    ? 'bg-green-primary text-white shadow-md'
-                                    : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
+                                ? 'bg-green-primary text-white shadow-md'
+                                : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
                                 }`}
                         >
-                            {role}
+                            {role === 'All' || role === 'Research Fellow' || role === 'Lead Researcher' ? role : role + 's'}
                         </button>
                     ))}
                 </div>

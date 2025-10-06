@@ -44,6 +44,17 @@
     "image": "/assets/Meet_with_the_teams/Abhijit-Paul.jpeg"
   },
   {
+    "name": "Nazifa Tasnim Hia",
+    "workplace": "Department of CSE, University of Liberal Arts Bangladesh (ULAB)",
+    "position": "Lecturer",
+    "email": "tasnimhia75@gmail.com",
+    "googleScholar": "https://scholar.google.com/citations?user=JbYe_s4AAAAJ&hl=en",
+    "github": "https://github.com/nazifaHia",
+    "linkedin": "https://www.linkedin.com/in/nazifa-tasnim-hia-59b7b8147",
+    "role": "Mentor",
+    "image": "/assets/Meet_with_the_teams/Nazifa_Tasnim_Hia.jpeg"
+  },
+  {
     "name": "Sharif Mohammad Abdullah",
     "workplace": "IIT, University of Dhaka",
     "position": "Undergrad Student",
@@ -152,16 +163,5 @@
     "linkedin": "https://www.linkedin.com/in/tanvir-hasan-abir-30219b264",
     "role": "Undergrad Researcher",
     "image": "/assets/Meet_with_the_teams/1321.png"
-  },
-  {
-    "name": "Nazifa Tasnim Hia",
-    "workplace": "Department of CSE, University of Liberal Arts Bangladesh (ULAB)",
-    "position": "Lecturer",
-    "email": "tasnimhia75@gmail.com",
-    "googleScholar": "https://scholar.google.com/citations?user=JbYe_s4AAAAJ&hl=en",
-    "github": "https://github.com/nazifaHia",
-    "linkedin": "https://www.linkedin.com/in/nazifa-tasnim-hia-59b7b8147",
-    "role": "Mentor",
-    "image": "/assets/Meet_with_the_teams/Nazifa_Tasnim_Hia.jpeg"
   }
 ]
