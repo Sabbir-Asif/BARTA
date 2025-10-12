@@ -163,5 +163,16 @@
     "linkedin": "https://www.linkedin.com/in/tanvir-hasan-abir-30219b264",
     "role": "Undergrad Researcher",
     "image": "/assets/Meet_with_the_teams/1321.png"
+  },
+  {
+    "name": "Siam Rahman",
+    "workplace": "AskTuring AI",
+    "position": "Full Stack Engineer",
+    "email": "siam@graduate.utm.my",
+    "googleScholar": "https://scholar.google.com/",
+    "github": "https://github.com/SiamRahman29",
+    "linkedin": "https://www.linkedin.com/in/siamrahman-29/",
+    "role": "Undergrad Researcher",
+    "image": "/assets/Meet_with_the_teams/Siam_Rahman.jpeg"
   }
 ]
